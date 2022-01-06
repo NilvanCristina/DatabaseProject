@@ -50,11 +50,12 @@ body {
     background-color: #761cca;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 7px #999;
+    transition: all 500ms ease;
 }
 
 .query-button:hover {
     background-color: blueviolet;
+    transition: all 500ms ease;
 }
 
 .query-button:active {
@@ -76,11 +77,12 @@ body {
     background-color: #761cca;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 7px #999;
+    transition: all 500ms ease;
 }
 
 .button:hover {
     background-color: blueviolet;
+    transition: all 500ms ease;
 }
 
 .button:active {
@@ -120,6 +122,8 @@ th {
 
     .query-button {
         font-size: 60px;
+        width: 80%;
+        margin-bottom: 4%;
     }
 
     .button {
@@ -138,12 +142,16 @@ th {
     }
 
     table {
-        width:50%;
+        width:100%;
+        border-spacing: 0;
+        table-layout: fixed;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     td, th {
         font-size: 30px;
-        width: 70px;
+        word-break: break-all;
     }
 }
 
