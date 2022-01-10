@@ -14,7 +14,7 @@
 
                 $query = ("SELECT DISTINCT amount AS amount
                         FROM consumption
-                        WHERE consumption_month = '" . $month . "' AND consumption_year = 2021 AND value >= ALL (
+                        WHERE consumption_month = '" . $month . "' AND consumption_year = '" . $year . "' AND value >= ALL (
                                                                         SELECT value
                                                                         FROM consumption 
                                                                         WHERE consumption_month = '" . $month . "' AND consumption_year = '" . $year . "'); ");
